@@ -1,16 +1,20 @@
-# 🔍 Python SIEM Log Analyzer  
+# Python SIEM Log Analyzer
 
-A simple Python tool to **detect hacker attacks** in server logs. Perfect for cybersecurity beginners!  
+A log analysis tool that scans Linux system logs (e.g., `auth.log`) to detect suspicious activities such as failed SSH login attempts, brute-force attacks, and privilege escalation attempts. Built for entry-level SIEM use cases and security operations automation.
 
-## 🛡️ What It Detects  
-- **Brute-force attacks** (Multiple failed logins)  
-- **SQL injection attempts** (e.g., `' OR 1=1--`)  
-- **Suspicious IPs** (Optional: Add IP blacklists)  
+---
 
-## 🖥️ How to Use  
-1. **Install Python** (if you haven’t):  
-   - Download: [python.org](https://www.python.org/downloads/)  
+## 🔍 Features
 
-2. **Run the analyzer**:  
-   ```bash
-   python log_analyzer.py /var/log/auth.log
+- Parses system logs for:
+  - Failed SSH logins
+  - Brute force detection (multiple failed logins from one IP)
+  - Root access attempts
+- Outputs JSON alert summaries
+- Easy to extend with more detection rules
+- Beginner-friendly and SOC-relevant
+
+---
+
+## 📁 Project Structure
+
