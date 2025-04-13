@@ -1,6 +1,6 @@
 # Python SIEM Log Analyzer
 
-A log analysis tool that scans Linux system logs (e.g., `auth.log`) to detect suspicious activities such as failed SSH login attempts, brute-force attacks, and privilege escalation attempts. Built for SIEM use cases and security operations automation.
+A log analysis tool built with python that scans Linux system logs (e.g., `auth.log`) to detect suspicious activities such as failed SSH login attempts, brute-force attacks, and privilege escalation attempts. Built for SIEM use cases and security operations automation.
 
 ---
 
